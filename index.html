@@ -14,11 +14,11 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@600;700&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#fbf7f1;--card:#fff;--ink:#1f1416;--mut:#6b5f5a;--line:#eadfd3;--wine:#b3262d;--wine2:#d9454b;--gold:#c08f3e;--gold2:#e8c27a;--sky:#1d4f7a;
+:root{--bg:#fbf7f1;--card:#fff;--ink:#1f1416;--mut:#6b5f5a;--line:#eadfd3;--wine:#1c2f63;--wine2:#2c4386;--gold:#9a7a3c;--gold2:#d7bf8a;--sky:#1d4f7a;
   --serif:'Fraunces',Georgia,serif;--sans:'Plus Jakarta Sans',system-ui,sans-serif;--mono:'JetBrains Mono',ui-monospace,monospace;color-scheme:light}
 *{box-sizing:border-box}
 body{margin:0;min-height:100vh;color:var(--ink);font:16px/1.6 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:hidden;
-  background:radial-gradient(800px 500px at 100% -10%,rgba(232,194,122,.32),transparent 60%),radial-gradient(700px 500px at -10% 25%,rgba(217,69,75,.12),transparent 60%),var(--bg)}
+  background:#faf8f4}
 a{color:inherit}img{display:block;max-width:100%}
 :focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:10px}
 .wrap{width:min(560px,100% - 32px);margin:0 auto;padding:18px 0 48px;display:grid;gap:18px}
@@ -36,20 +36,20 @@ em{font-style:italic;color:var(--wine)}
 .card{background:var(--card);border:1px solid var(--line);border-radius:22px;box-shadow:0 12px 28px -24px rgba(60,20,20,.6)}
 /* hero */
 .hero{display:grid;gap:16px;justify-items:center;text-align:center}
-.photo{position:relative;width:min(260px,70vw);aspect-ratio:1/1.35;border-radius:28px;padding:5px;background:linear-gradient(150deg,var(--gold2),var(--wine) 55%,#1d4f7a);box-shadow:0 30px 60px -30px rgba(120,20,30,.7);animation:float 6s ease-in-out infinite}
-.photo img{width:100%;height:100%;object-fit:cover;object-position:50% 12%;border-radius:23px}
+.photo{position:relative;width:min(260px,70vw);aspect-ratio:1/1.35;border-radius:24px;padding:4px;background:#fff;border:1px solid var(--line);box-shadow:0 24px 50px -34px rgba(28,47,99,.6)}
+.photo img{width:100%;height:100%;object-fit:cover;object-position:50% 12%;border-radius:20px}
 .photo .tag{position:absolute;left:50%;bottom:-14px;transform:translateX(-50%);white-space:nowrap;padding:.4rem .9rem;border-radius:999px;background:var(--ink);color:#fff;font-size:.72rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;box-shadow:0 10px 20px -10px #000}
 @keyframes float{50%{transform:translateY(-6px) rotate(-.6deg)}}
 .hero h1{font-size:clamp(2rem,8vw,2.7rem);margin-top:14px}
 .meta{display:flex;flex-wrap:wrap;justify-content:center;gap:.4rem}
 .meta span{padding:.35rem .8rem;border-radius:999px;background:var(--card);border:1px solid var(--line);font-size:.8rem;font-weight:600;color:var(--mut)}
 .events{display:flex;gap:.5rem;justify-content:center}
-.events b{padding:.45rem 1rem;border-radius:12px;background:linear-gradient(135deg,var(--wine),var(--wine2));color:#fff;font:700 1rem var(--mono);letter-spacing:.02em}
+.events b{padding:.4rem .9rem;border-radius:10px;background:#fff;border:1px solid var(--line);color:var(--ink);font:700 .95rem var(--mono)}
 /* PB */
 .pbs{display:grid;gap:10px}
 @media(min-width:460px){.pbs{grid-template-columns:repeat(2,1fr)}}
-.pb{position:relative;overflow:hidden;padding:16px 16px 14px;border-radius:22px;background:linear-gradient(160deg,#1f1416,#3a1a1e);color:#fff}
-.pb:after{content:"";position:absolute;right:-30px;top:-30px;width:120px;height:120px;border-radius:50%;border:10px solid rgba(232,194,122,.16)}
+.pb{position:relative;overflow:hidden;padding:16px 16px 14px;border-radius:18px;background:#1c2f63;color:#fff}
+
 .pb small{display:block;font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold2);font-weight:800}
 .pb .t{font:700 2.6rem/1.05 var(--mono);letter-spacing:-.02em;margin:.25rem 0}
 .pb .e{font-size:.8rem;opacity:.85}
@@ -69,7 +69,7 @@ em{font-style:italic;color:var(--wine)}
 .ach div{flex:1;min-width:0}
 .ach b{display:block;font:600 1.02rem/1.25 var(--serif)}
 .ach small{color:var(--mut);font-size:.82rem}
-.ach .yr{font:700 .8rem var(--mono);color:var(--gold);padding:.2rem .5rem;border-radius:8px;background:#fff6e6}
+.ach .yr{font:700 .8rem var(--mono);color:var(--mut)}
 /* target */
 .road{padding:16px;display:grid;gap:14px}
 .road h3{font-size:1.15rem}
@@ -80,12 +80,12 @@ em{font-style:italic;color:var(--wine)}
 .goal small{color:var(--mut);font-size:.8rem}
 .goal small b{color:var(--wine)}
 /* motto */
-.quote{padding:20px 18px;text-align:center;background:linear-gradient(150deg,#fff,#fdf1e4)}
+.quote{padding:20px 18px;text-align:center}
 .quote q{display:block;font:italic 500 1.25rem/1.4 var(--serif);quotes:"“" "”"}
 .quote small{display:block;margin-top:.6rem;color:var(--mut);font-weight:600}
 .socials{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
 .socials a{display:inline-flex;align-items:center;gap:.5rem;min-height:46px;padding:.55rem 1.1rem;border-radius:999px;text-decoration:none;font-weight:700;color:#fff}
-.ig{background:linear-gradient(135deg,#f58529,#dd2a7b 50%,#8134af)}.tt{background:#111}
+.ig,.tt{background:#fff;color:var(--ink)!important;border:1px solid var(--line)}
 .coachby{display:flex;align-items:center;gap:12px;padding:14px 16px;text-decoration:none}
 .coachby img{width:48px;height:48px;border-radius:14px;object-fit:cover;object-position:50% 15%;background:#c3262e}
 .coachby div{flex:1}.coachby small{display:block;color:var(--mut);font-size:.78rem}
@@ -101,40 +101,36 @@ em{font-style:italic;color:var(--wine)}
 .ath small{color:var(--mut);font-size:.82rem}
 .ath .ev{display:flex;gap:6px;margin-top:6px;flex-wrap:wrap}
 .ath .ev span{font:700 .75rem var(--mono);padding:.15rem .5rem;border-radius:8px;background:#fdecea;color:var(--wine)}
-/* ===== KLUB ===== */
-.clubbar{position:sticky;top:0;z-index:20;padding:10px 16px;background:color-mix(in srgb,var(--bg) 86%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+/* ===== KLUB (elegan & tenang) ===== */
+.clubbar{position:sticky;top:0;z-index:20;padding:10px 16px;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 .brand{display:flex;align-items:center;gap:10px;text-decoration:none}
-.logo{width:42px;height:42px;flex:none;filter:drop-shadow(0 6px 10px rgba(20,39,92,.35))}
-.brand b{display:block;font:800 1.05rem/1 var(--sans);letter-spacing:.02em}
-.brand small{display:block;font-size:.68rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#f4511e}
-.club-hero{position:relative;overflow:hidden;color:#fff;padding:44px 16px 26px;background:radial-gradient(600px 340px at 90% 0%,rgba(255,122,47,.55),transparent 60%),radial-gradient(520px 300px at 0% 100%,rgba(43,95,217,.55),transparent 60%),linear-gradient(160deg,#0e1b45,#14275c 55%,#1b2f6e)}
-.club-hero:before{content:"";position:absolute;right:-60px;top:-40px;width:340px;height:340px;background:conic-gradient(from 0deg,transparent 0 20deg,rgba(255,176,46,.22) 22deg,transparent 26deg 110deg,rgba(255,176,46,.18) 112deg,transparent 116deg 200deg,rgba(255,176,46,.22) 202deg,transparent 206deg 290deg,rgba(255,176,46,.18) 292deg,transparent 296deg);border-radius:50%;animation:spin 40s linear infinite}
-.club-hero:after{content:"";position:absolute;left:0;right:0;bottom:0;height:6px;background:repeating-linear-gradient(90deg,#fff 0 26px,transparent 26px 40px);opacity:.25;animation:lane2 1.4s linear infinite}
-@keyframes spin{to{transform:rotate(360deg)}}
-@keyframes lane2{to{background-position:40px 0}}
-.ch-in{position:relative;display:grid;gap:12px;max-width:620px}
-.kicker.light{color:#ffb02e}
-.club-hero h1{font-size:clamp(2.4rem,9vw,4rem);color:#fff;line-height:1}
-.club-hero h1 em{color:#ffb02e}
-.club-hero p{margin:0;color:#d8e0f5;max-width:520px}.club-hero p b{color:#fff}
-.ch-cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:4px}
-.btn-nova{display:inline-flex;align-items:center;min-height:48px;padding:.65rem 1.3rem;border-radius:999px;background:linear-gradient(135deg,#ffb02e,#f4511e);color:#14275c;font-weight:800;text-decoration:none;box-shadow:0 14px 28px -14px #f4511e}
-.btn-ghost{display:inline-flex;align-items:center;min-height:48px;padding:.65rem 1.3rem;border-radius:999px;border:1px solid rgba(255,255,255,.4);color:#fff;font-weight:700;text-decoration:none}
-.club-stats{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:24px}
-.club-stats div{padding:14px 8px;border-radius:18px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);text-align:center;backdrop-filter:blur(6px)}
-.club-stats b{display:block;font:700 1.5rem/1.1 var(--mono);color:#fff}
-.club-stats b.md{font-size:1rem;line-height:1.35;white-space:nowrap}
-.club-stats small{font-size:.72rem;color:#c9d3ee;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.logo{width:38px;height:38px;flex:none}
+.brand b{display:block;font:600 1.05rem/1.1 var(--serif);letter-spacing:.01em}
+.brand small{display:block;font-size:.64rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--mut)}
+.club-hero{padding:48px 16px 8px}
+.ch-in{display:grid;gap:14px;max-width:640px}
+.kicker.light{color:var(--gold)}
+.club-hero h1{font-size:clamp(2.3rem,8vw,3.6rem);line-height:1.05;color:var(--ink)}
+.club-hero h1 em{color:var(--wine)}
+.club-hero p{margin:0;color:var(--mut);max-width:540px}.club-hero p b{color:var(--ink);font-weight:600}
+.ch-cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:6px}
+.btn-nova{display:inline-flex;align-items:center;min-height:46px;padding:.6rem 1.25rem;border-radius:999px;background:var(--wine);color:#fff;font-weight:600;text-decoration:none;transition:opacity .2s}
+.btn-nova:hover{opacity:.9}
+.btn-ghost{display:inline-flex;align-items:center;min-height:46px;padding:.6rem 1.25rem;border-radius:999px;border:1px solid var(--line);color:var(--ink);font-weight:600;text-decoration:none;background:#fff}
+.club-stats{display:grid;grid-template-columns:repeat(3,1fr);margin-top:28px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.club-stats div{padding:16px 6px;text-align:center}
+.club-stats div+div{border-left:1px solid var(--line)}
+.club-stats b{display:block;font:500 2rem/1 var(--serif);color:var(--ink)}
+.club-stats small{display:block;margin-top:.35rem;font-size:.68rem;color:var(--mut);font-weight:700;letter-spacing:.14em;text-transform:uppercase}
 .disc3{display:grid;gap:10px}
 @media(min-width:620px){.disc3{grid-template-columns:repeat(3,1fr)}}
-.d{position:relative;overflow:hidden;padding:16px;border-radius:20px;color:#fff;background:var(--g);box-shadow:0 16px 30px -20px rgba(20,39,92,.7)}
-.d span{position:absolute;right:12px;top:10px;font-size:1.4rem}
-.d b{display:block;font:600 1.2rem var(--serif)}
-.d small{display:block;font-size:.76rem;font-weight:700;opacity:.9}
-.d i{display:inline-block;margin-top:8px;font-style:normal;font-size:.72rem;font-weight:800;padding:.2rem .6rem;border-radius:99px;background:rgba(255,255,255,.2)}
+.d{padding:16px 16px 14px;border-radius:16px;background:#fff;border:1px solid var(--line);border-top:3px solid var(--c,var(--wine))}
+.d b{display:block;font:600 1.12rem var(--serif)}
+.d small{display:block;font-size:.8rem;color:var(--mut);margin-top:.15rem}
+.d i{display:block;margin-top:10px;font-style:normal;font-size:.74rem;font-weight:700;color:var(--ink)}
 .ath .im{position:relative}
-.ath .cat{position:absolute;left:10px;bottom:10px;padding:.25rem .65rem;border-radius:99px;background:#14275c;color:#fff;font-size:.66rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
-.pbline{margin-top:8px;font-size:.78rem;color:var(--mut)}.pbline b{font:700 .9rem var(--mono);color:var(--ink)}
+.ath .cat{position:absolute;left:10px;bottom:10px;padding:.22rem .6rem;border-radius:6px;background:rgba(255,255,255,.92);color:var(--ink);font-size:.64rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+.pbline{margin-top:8px;font-size:.78rem;color:var(--mut)}.pbline b{font:700 .88rem var(--mono);color:var(--ink)}
 footer{text-align:center;color:var(--mut);font-size:.8rem}
 .toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,120px);background:var(--ink);color:#fff;padding:.7rem 1.2rem;border-radius:999px;font-weight:600;font-size:.88rem;transition:transform .35s;z-index:50}
 .toast.on{transform:translate(-50%,0)}
@@ -155,7 +151,7 @@ const MED = { gold: '1', silver: '2', bronze: '3' };
 const app = document.getElementById('app');
 const id = new URLSearchParams(location.search).get('a');
 const A = (window.ATLET || []).find(x => x.id === id);
-const LOGO = `<svg class="logo" viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="nv" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffb02e"/><stop offset=".55" stop-color="#f4511e"/><stop offset="1" stop-color="#14275c"/></linearGradient></defs><rect width="64" height="64" rx="18" fill="#14275c"/><path d="M32 7l5.6 17.4L55 30l-17.4 5.6L32 53l-5.6-17.4L9 30l17.4-5.6z" fill="url(#nv)"/><circle cx="32" cy="30" r="5" fill="#fff"/></svg>`;
+const LOGO = `<svg class="logo" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="30" fill="#1c2f63"/><path d="M32 13l4.2 13.4L50 31l-13.8 4.6L32 49l-4.2-13.4L14 31l13.8-4.6z" fill="none" stroke="#d7bf8a" stroke-width="2.2" stroke-linejoin="round"/></svg>`;
 const coach = `<a class="card coachby rv" href="https://syaifudinwahid.vercel.app/" target="_blank" rel="noopener"><img src="assets/wahid-cutout.webp" alt=""><div><b>Coached by Coach Syaifudin Wahid, M.Pd</b><small>Swimming &amp; Athletics Coach · PASI Kota Tangerang</small></div><span aria-hidden="true">→</span></a>`;
 
 if (A) {
@@ -168,7 +164,7 @@ if (A) {
       <div class="photo"><img src="${esc(A.foto)}" alt="${esc(A.nama)}" width="480" height="960"><span class="tag">${esc(A.kategori)}</span></div>
       <span class="kicker" style="margin-top:12px">Athlete · ${esc(A.klub)}</span>
       <h1>${esc(A.nama.replace(A.panggilan, '').trim()) ? esc(A.nama).replace(esc(A.panggilan), `<em>${esc(A.panggilan)}</em>`) : esc(A.nama)}</h1>
-      <div class="meta"><span>${esc(A.gender)} · ${age} tahun</span><span>📍 ${esc(A.kota)}</span><span>🏫 ${esc(A.sekolah)}</span><span>🏃 Sejak ${esc(A.sejak)}</span></div>
+      <div class="meta"><span>${esc(A.gender)} · ${age} tahun</span><span>${esc(A.kota)}</span><span>${esc(A.sekolah)}</span><span>Sejak ${esc(A.sejak)}</span></div>
       <div class="events">${A.nomor.map(n => `<b>${esc(n)}</b>`).join('')}</div>
     </header>
 
@@ -180,10 +176,10 @@ if (A) {
     <ol class="card ach rv">${A.prestasi.map(p => `<li><span class="coin ${p.medali || 'none'}">${MED[p.medali] || '★'}</span><div><b>${esc(p.event)}</b><small>${esc(p.nomor)} · ${esc(p.hasil)}</small></div><span class="yr">${p.tahun}</span></li>`).join('')}</ol>
 
     ${A.target ? `<div class="sec rv">Road to ${esc(A.target.event)}</div>
-    <div class="card road rv">${A.target.waktu.map(g => { if (!g.dari) return `<div class="goal"><div class="row"><b>${esc(g.nomor)}</b><span>Target <b style="color:var(--wine)">${esc(g.tampil)}</b></span></div><div class="bar"><i data-w="8" style="background:repeating-linear-gradient(90deg,var(--gold2) 0 8px,transparent 8px 14px)"></i></div><small>Catatan waktu resmi pertama segera dicatat 🔥</small></div>`; const gap = +(g.dari - g.ke).toFixed(2); return `<div class="goal"><div class="row"><b>${esc(g.nomor)}</b><span>${fmt(g.dari)} → <b style="color:var(--wine)">${esc(g.tampil)}</b></span></div><div class="bar"><i data-w="${Math.round(g.ke / g.dari * 100)}"></i></div><small>Target: pangkas <b>${gap % 1 ? gap.toFixed(2) : gap} detik</b> dari catatan terbaik</small></div>`; }).join('')}</div>` : ''}
+    <div class="card road rv">${A.target.waktu.map(g => { if (!g.dari) return `<div class="goal"><div class="row"><b>${esc(g.nomor)}</b><span>Target <b style="color:var(--wine)">${esc(g.tampil)}</b></span></div><div class="bar"><i data-w="8" style="background:repeating-linear-gradient(90deg,var(--gold2) 0 8px,transparent 8px 14px)"></i></div><small>Catatan waktu resmi pertama segera dicatat</small></div>`; const gap = +(g.dari - g.ke).toFixed(2); return `<div class="goal"><div class="row"><b>${esc(g.nomor)}</b><span>${fmt(g.dari)} → <b style="color:var(--wine)">${esc(g.tampil)}</b></span></div><div class="bar"><i data-w="${Math.round(g.ke / g.dari * 100)}"></i></div><small>Target: pangkas <b>${gap % 1 ? gap.toFixed(2) : gap} detik</b> dari catatan terbaik</small></div>`; }).join('')}</div>` : ''}
 
     <div class="card quote rv"><q>${esc(A.motto)}</q><small>— ${esc(A.panggilan)} · Idola: ${esc(A.idola)}</small></div>
-    <div class="socials rv">${A.instagram ? `<a class="ig" href="https://instagram.com/${esc(A.instagram)}" target="_blank" rel="noopener">📷 @${esc(A.instagram)}</a>` : ''}${A.tiktok ? `<a class="tt" href="https://www.tiktok.com/@${esc(A.tiktok)}" target="_blank" rel="noopener">🎵 @${esc(A.tiktok)}</a>` : ''}</div>
+    <div class="socials rv">${A.instagram ? `<a class="ig" href="https://instagram.com/${esc(A.instagram)}" target="_blank" rel="noopener">Instagram · @${esc(A.instagram)}</a>` : ''}${A.tiktok ? `<a class="tt" href="https://www.tiktok.com/@${esc(A.tiktok)}" target="_blank" rel="noopener">TikTok · @${esc(A.tiktok)}</a>` : ''}</div>
     ${coach}
     <footer>© ${new Date().getFullYear()} Coach Syaifudin Wahid · Profil atlet ditampilkan dengan izin</footer>
   </div>`;
@@ -201,21 +197,21 @@ if (A) {
     <div class="ch-in rv">
       <span class="kicker light">Athletics Club · Kota Tangerang</span>
       <h1>SuperNova <em>Atletik</em><br>Tangerang</h1>
-      <p>Run fast. Run far. <b>Shine like a supernova.</b> Klub atletik lari — sprint, middle distance &amp; long distance — di bawah asuhan Coach Syaifudin Wahid, M.Pd.</p>
-      <div class="ch-cta"><a class="btn-nova" href="#skuad">Lihat skuad →</a><a class="btn-ghost" href="https://syaifudinwahid.vercel.app/" target="_blank" rel="noopener">Head coach</a></div>
+      <p><b>Run fast. Run far.</b> Klub atletik lari — sprint, middle distance &amp; long distance — di bawah asuhan Coach Syaifudin Wahid, M.Pd.</p>
+      <div class="ch-cta"><a class="btn-nova" href="#skuad">Lihat skuad</a><a class="btn-ghost" href="https://syaifudinwahid.vercel.app/" target="_blank" rel="noopener">Head coach</a></div>
     </div>
     <div class="club-stats rv">
       <div><b data-n="${list.length}">${list.length}</b><small>Atlet</small></div>
       <div><b data-n="${all.length}">${all.length}</b><small>Prestasi</small></div>
-      <div><b class="md">🥇${tally.gold}<br>🥈${tally.silver} 🥉${tally.bronze}</b><small>Medali</small></div>
+      <div><b>${tally.gold + tally.silver + tally.bronze}</b><small>Medali</small></div>
     </div>
   </div></section>
   <div class="wrap wide">
     <div class="sec rv">Disciplines</div>
     <div class="disc3">
-      <div class="d rv" style="--g:linear-gradient(150deg,#ff7a2f,#e53935)"><span>⚡</span><b>Sprint</b><small>100m · 200m · 400m</small><i>${count('Sprint')} atlet</i></div>
-      <div class="d rv" style="--g:linear-gradient(150deg,#ffb02e,#f46b1d)"><span>🔥</span><b>Middle Distance</b><small>800m · 1500m</small><i>${count('Middle Distance')} atlet</i></div>
-      <div class="d rv" style="--g:linear-gradient(150deg,#2b5fd9,#14275c)"><span>🏔️</span><b>Long Distance</b><small>3000m · 5K · 10K</small><i>${count('Long Distance')} atlet</i></div>
+      <div class="d rv" style="--c:#9a7a3c"><b>Sprint</b><small>100m · 200m · 400m</small><i>${count('Sprint')} atlet</i></div>
+      <div class="d rv" style="--c:#2c4386"><b>Middle Distance</b><small>800m · 1500m</small><i>${count('Middle Distance')} atlet</i></div>
+      <div class="d rv" style="--c:#1c2f63"><b>Long Distance</b><small>3000m · 5K · 10K</small><i>${count('Long Distance')} atlet</i></div>
     </div>
 
     <div class="sec rv" id="skuad">Our squad</div>
