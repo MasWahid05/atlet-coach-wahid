@@ -113,7 +113,7 @@ footer{text-align:center;color:var(--mut);font-size:.8rem}
 <script>document.documentElement.classList.add('js')</script>
 <div id="app"></div>
 <div class="toast" id="toast" role="status" aria-live="polite">Link copied ✓</div>
-<script src="data.js?v=1"></script>
+<script src="data.js?v=2"></script>
 <script>
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const fmt = d => { const m = Math.floor(d / 60), s = d - m * 60; return m ? `${m}:${s.toFixed(s % 1 ? 2 : 0).padStart(s % 1 ? 5 : 2, '0')}` : s.toFixed(2); };
@@ -126,7 +126,7 @@ const coach = `<a class="card coachby rv" href="https://syaifudinwahid.vercel.ap
 if (A) {
   document.title = `${A.nama} — Atlet ${A.kategori} | Coach Syaifudin Wahid`;
   const medals = { gold: 0, silver: 0, bronze: 0 }; A.prestasi.forEach(p => medals[p.medali] !== undefined && medals[p.medali]++);
-  const age = new Date().getFullYear() - A.lahir;
+  const now = new Date(); const age = now.getFullYear() - A.lahir - ((now.getMonth() + 1) < (A.bulanLahir || 1) ? 1 : 0);
   app.innerHTML = `<div class="wrap">
     <div class="top"><a class="back" href="./">← Semua atlet</a><button class="iconbtn" id="share" aria-label="Bagikan profil">↗</button></div>
     <header class="hero rv">
@@ -145,7 +145,7 @@ if (A) {
     <ol class="card ach rv">${A.prestasi.map(p => `<li><span class="coin ${p.medali || 'none'}">${MED[p.medali] || '★'}</span><div><b>${esc(p.event)}</b><small>${esc(p.nomor)} · ${esc(p.hasil)}</small></div><span class="yr">${p.tahun}</span></li>`).join('')}</ol>
 
     ${A.target ? `<div class="sec rv">Road to ${esc(A.target.event)}</div>
-    <div class="card road rv">${A.target.waktu.map(g => { const gap = g.dari - g.ke; return `<div class="goal"><div class="row"><b>${esc(g.nomor)}</b><span>${fmt(g.dari)} → <b style="color:var(--wine)">${esc(g.tampil)}</b></span></div><div class="bar"><i data-w="${Math.round(g.ke / g.dari * 100)}"></i></div><small>Target: pangkas <b>${gap % 1 ? gap.toFixed(2) : gap} detik</b> dari catatan terbaik</small></div>`; }).join('')}</div>` : ''}
+    <div class="card road rv">${A.target.waktu.map(g => { if (!g.dari) return `<div class="goal"><div class="row"><b>${esc(g.nomor)}</b><span>Target <b style="color:var(--wine)">${esc(g.tampil)}</b></span></div><div class="bar"><i data-w="8" style="background:repeating-linear-gradient(90deg,var(--gold2) 0 8px,transparent 8px 14px)"></i></div><small>Catatan waktu resmi pertama segera dicatat 🔥</small></div>`; const gap = +(g.dari - g.ke).toFixed(2); return `<div class="goal"><div class="row"><b>${esc(g.nomor)}</b><span>${fmt(g.dari)} → <b style="color:var(--wine)">${esc(g.tampil)}</b></span></div><div class="bar"><i data-w="${Math.round(g.ke / g.dari * 100)}"></i></div><small>Target: pangkas <b>${gap % 1 ? gap.toFixed(2) : gap} detik</b> dari catatan terbaik</small></div>`; }).join('')}</div>` : ''}
 
     <div class="card quote rv"><q>${esc(A.motto)}</q><small>— ${esc(A.panggilan)} · Idola: ${esc(A.idola)}</small></div>
     <div class="socials rv">${A.instagram ? `<a class="ig" href="https://instagram.com/${esc(A.instagram)}" target="_blank" rel="noopener">📷 @${esc(A.instagram)}</a>` : ''}${A.tiktok ? `<a class="tt" href="https://www.tiktok.com/@${esc(A.tiktok)}" target="_blank" rel="noopener">🎵 @${esc(A.tiktok)}</a>` : ''}</div>

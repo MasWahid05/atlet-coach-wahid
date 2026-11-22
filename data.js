@@ -10,7 +10,7 @@ window.ATLET = [
     nama: 'Afika Febriana Edwar',
     panggilan: 'Afika',
     gender: 'Putri',
-    lahir: 2012,                       // hanya tahun yang ditampilkan (atlet di bawah umur)
+    lahir: 2012, bulanLahir: 2,        // hanya usia yang ditampilkan (atlet di bawah umur)
     kota: 'Kota Tangerang, Banten',
     sekolah: 'SMPN 32 Kota Tangerang',
     klub: 'SuperNova Atletik',
@@ -39,5 +39,36 @@ window.ATLET = [
     idola: 'Robi Syianturi',
     instagram: 'afikaedwar',
     tiktok: 'afikaedwar'
+  },
+  {
+    id: 'aydin',
+    nama: 'Aydin Khalfani Achmad',
+    panggilan: 'Aydin',
+    gender: 'Putra',
+    lahir: 2009, bulanLahir: 12,
+    kota: 'Kota Tangerang, Banten',
+    sekolah: 'MAN 2 Kota Tangerang',
+    klub: 'SuperNova Atletik',
+    sejak: 2026,
+    foto: 'foto/aydin.jpg',
+    nomor: ['800m', '3000m', '5K', '10K'],
+    kategori: 'Long Distance',
+    pb: [
+      { nomor: '5K', detik: 1190, tampil: '19:50', event: 'KNPI Run', tempat: 'Kota Tangerang', tahun: 2026 }
+    ],
+    prestasi: [
+      { tahun: 2026, event: 'KNPI Run', nomor: '5K', hasil: 'Juara 1 · Kategori Potential', medali: 'gold' }
+    ],
+    target: {
+      event: 'Season 2027',
+      waktu: [
+        { nomor: '5K', dari: 1190, ke: 1050, tampil: 'sub 17:30' },
+        { nomor: '800m', ke: 120, tampil: 'sub 2:00' }
+      ]
+    },
+    motto: 'Pelari yang hebat tidak lahir dalam satu malam.',
+    idola: 'Jakob Ingebrigtsen',
+    instagram: 'aydnn_2unty',
+    tiktok: 'aydnn_2unty'
   }
 ];
