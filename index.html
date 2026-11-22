@@ -123,6 +123,7 @@ em{font-style:italic;color:var(--wine)}
 .club-stats{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:24px}
 .club-stats div{padding:14px 8px;border-radius:18px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);text-align:center;backdrop-filter:blur(6px)}
 .club-stats b{display:block;font:700 1.5rem/1.1 var(--mono);color:#fff}
+.club-stats b.md{font-size:1rem;line-height:1.35;white-space:nowrap}
 .club-stats small{font-size:.72rem;color:#c9d3ee;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
 .disc3{display:grid;gap:10px}
 @media(min-width:620px){.disc3{grid-template-columns:repeat(3,1fr)}}
@@ -206,7 +207,7 @@ if (A) {
     <div class="club-stats rv">
       <div><b data-n="${list.length}">${list.length}</b><small>Atlet</small></div>
       <div><b data-n="${all.length}">${all.length}</b><small>Prestasi</small></div>
-      <div><b>🥇${tally.gold} 🥈${tally.silver} 🥉${tally.bronze}</b><small>Medali</small></div>
+      <div><b class="md">🥇${tally.gold}<br>🥈${tally.silver} 🥉${tally.bronze}</b><small>Medali</small></div>
     </div>
   </div></section>
   <div class="wrap wide">
