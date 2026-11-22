@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Atlet Binaan — Coach Syaifudin Wahid</title>
-<meta name="description" content="Profil atlet atletik binaan Coach Syaifudin Wahid, M.Pd — sprint, middle distance & long distance.">
-<meta name="theme-color" content="#fbf7f1">
-<meta property="og:title" content="Atlet Binaan — Coach Syaifudin Wahid">
-<meta property="og:description" content="Profil, catatan waktu terbaik & prestasi atlet atletik.">
+<title>SuperNova Atletik Tangerang — Athletics Club</title>
+<meta name="description" content="SuperNova Atletik Tangerang — klub atletik lari (sprint, middle & long distance) Kota Tangerang. Profil atlet, catatan waktu terbaik & prestasi.">
+<meta name="theme-color" content="#14275c">
+<meta property="og:title" content="SuperNova Atletik Tangerang">
+<meta property="og:description" content="Run fast. Run far. Shine like a supernova. Klub atletik lari Kota Tangerang.">
 <meta property="og:image" content="foto/afika.jpg">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23b3262d'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' font-style='italic' text-anchor='middle' fill='%23fff'%3ESW%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%2314275c'/%3E%3Cpath d='M32 7l5.6 17.4L55 30l-17.4 5.6L32 53l-5.6-17.4L9 30l17.4-5.6z' fill='%23ff8a2b'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@600;700&display=swap" rel="stylesheet">
@@ -101,6 +101,39 @@ em{font-style:italic;color:var(--wine)}
 .ath small{color:var(--mut);font-size:.82rem}
 .ath .ev{display:flex;gap:6px;margin-top:6px;flex-wrap:wrap}
 .ath .ev span{font:700 .75rem var(--mono);padding:.15rem .5rem;border-radius:8px;background:#fdecea;color:var(--wine)}
+/* ===== KLUB ===== */
+.clubbar{position:sticky;top:0;z-index:20;padding:10px 16px;background:color-mix(in srgb,var(--bg) 86%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo{width:42px;height:42px;flex:none;filter:drop-shadow(0 6px 10px rgba(20,39,92,.35))}
+.brand b{display:block;font:800 1.05rem/1 var(--sans);letter-spacing:.02em}
+.brand small{display:block;font-size:.68rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#f4511e}
+.club-hero{position:relative;overflow:hidden;color:#fff;padding:44px 16px 26px;background:radial-gradient(600px 340px at 90% 0%,rgba(255,122,47,.55),transparent 60%),radial-gradient(520px 300px at 0% 100%,rgba(43,95,217,.55),transparent 60%),linear-gradient(160deg,#0e1b45,#14275c 55%,#1b2f6e)}
+.club-hero:before{content:"";position:absolute;right:-60px;top:-40px;width:340px;height:340px;background:conic-gradient(from 0deg,transparent 0 20deg,rgba(255,176,46,.22) 22deg,transparent 26deg 110deg,rgba(255,176,46,.18) 112deg,transparent 116deg 200deg,rgba(255,176,46,.22) 202deg,transparent 206deg 290deg,rgba(255,176,46,.18) 292deg,transparent 296deg);border-radius:50%;animation:spin 40s linear infinite}
+.club-hero:after{content:"";position:absolute;left:0;right:0;bottom:0;height:6px;background:repeating-linear-gradient(90deg,#fff 0 26px,transparent 26px 40px);opacity:.25;animation:lane2 1.4s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes lane2{to{background-position:40px 0}}
+.ch-in{position:relative;display:grid;gap:12px;max-width:620px}
+.kicker.light{color:#ffb02e}
+.club-hero h1{font-size:clamp(2.4rem,9vw,4rem);color:#fff;line-height:1}
+.club-hero h1 em{color:#ffb02e}
+.club-hero p{margin:0;color:#d8e0f5;max-width:520px}.club-hero p b{color:#fff}
+.ch-cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:4px}
+.btn-nova{display:inline-flex;align-items:center;min-height:48px;padding:.65rem 1.3rem;border-radius:999px;background:linear-gradient(135deg,#ffb02e,#f4511e);color:#14275c;font-weight:800;text-decoration:none;box-shadow:0 14px 28px -14px #f4511e}
+.btn-ghost{display:inline-flex;align-items:center;min-height:48px;padding:.65rem 1.3rem;border-radius:999px;border:1px solid rgba(255,255,255,.4);color:#fff;font-weight:700;text-decoration:none}
+.club-stats{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:24px}
+.club-stats div{padding:14px 8px;border-radius:18px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);text-align:center;backdrop-filter:blur(6px)}
+.club-stats b{display:block;font:700 1.5rem/1.1 var(--mono);color:#fff}
+.club-stats small{font-size:.72rem;color:#c9d3ee;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.disc3{display:grid;gap:10px}
+@media(min-width:620px){.disc3{grid-template-columns:repeat(3,1fr)}}
+.d{position:relative;overflow:hidden;padding:16px;border-radius:20px;color:#fff;background:var(--g);box-shadow:0 16px 30px -20px rgba(20,39,92,.7)}
+.d span{position:absolute;right:12px;top:10px;font-size:1.4rem}
+.d b{display:block;font:600 1.2rem var(--serif)}
+.d small{display:block;font-size:.76rem;font-weight:700;opacity:.9}
+.d i{display:inline-block;margin-top:8px;font-style:normal;font-size:.72rem;font-weight:800;padding:.2rem .6rem;border-radius:99px;background:rgba(255,255,255,.2)}
+.ath .im{position:relative}
+.ath .cat{position:absolute;left:10px;bottom:10px;padding:.25rem .65rem;border-radius:99px;background:#14275c;color:#fff;font-size:.66rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+.pbline{margin-top:8px;font-size:.78rem;color:var(--mut)}.pbline b{font:700 .9rem var(--mono);color:var(--ink)}
 footer{text-align:center;color:var(--mut);font-size:.8rem}
 .toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,120px);background:var(--ink);color:#fff;padding:.7rem 1.2rem;border-radius:999px;font-weight:600;font-size:.88rem;transition:transform .35s;z-index:50}
 .toast.on{transform:translate(-50%,0)}
@@ -121,14 +154,15 @@ const MED = { gold: '1', silver: '2', bronze: '3' };
 const app = document.getElementById('app');
 const id = new URLSearchParams(location.search).get('a');
 const A = (window.ATLET || []).find(x => x.id === id);
+const LOGO = `<svg class="logo" viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="nv" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffb02e"/><stop offset=".55" stop-color="#f4511e"/><stop offset="1" stop-color="#14275c"/></linearGradient></defs><rect width="64" height="64" rx="18" fill="#14275c"/><path d="M32 7l5.6 17.4L55 30l-17.4 5.6L32 53l-5.6-17.4L9 30l17.4-5.6z" fill="url(#nv)"/><circle cx="32" cy="30" r="5" fill="#fff"/></svg>`;
 const coach = `<a class="card coachby rv" href="https://syaifudinwahid.vercel.app/" target="_blank" rel="noopener"><img src="assets/wahid-cutout.webp" alt=""><div><b>Coached by Coach Syaifudin Wahid, M.Pd</b><small>Swimming &amp; Athletics Coach · PASI Kota Tangerang</small></div><span aria-hidden="true">→</span></a>`;
 
 if (A) {
-  document.title = `${A.nama} — Atlet ${A.kategori} | Coach Syaifudin Wahid`;
+  document.title = `${A.nama} — Atlet ${A.kategori} | SuperNova Atletik Tangerang`;
   const medals = { gold: 0, silver: 0, bronze: 0 }; A.prestasi.forEach(p => medals[p.medali] !== undefined && medals[p.medali]++);
   const now = new Date(); const age = now.getFullYear() - A.lahir - ((now.getMonth() + 1) < (A.bulanLahir || 1) ? 1 : 0);
   app.innerHTML = `<div class="wrap">
-    <div class="top"><a class="back" href="./">← Semua atlet</a><button class="iconbtn" id="share" aria-label="Bagikan profil">↗</button></div>
+    <div class="top"><a class="back" href="./">← SuperNova Atletik</a><button class="iconbtn" id="share" aria-label="Bagikan profil">↗</button></div>
     <header class="hero rv">
       <div class="photo"><img src="${esc(A.foto)}" alt="${esc(A.nama)}" width="480" height="960"><span class="tag">${esc(A.kategori)}</span></div>
       <span class="kicker" style="margin-top:12px">Athlete · ${esc(A.klub)}</span>
@@ -154,11 +188,44 @@ if (A) {
   </div>`;
 } else {
   const list = window.ATLET || [];
-  app.innerHTML = `<div class="wrap wide">
-    <div class="top"><a class="back" href="https://syaifudinwahid.vercel.app/">← Coach Syaifudin Wahid</a><button class="iconbtn" id="share" aria-label="Bagikan halaman">↗</button></div>
-    <header class="hero rv" style="margin:10px 0 6px"><span class="kicker">Athletics · Sprint &amp; Distance</span><h1>Our <em>Athletes</em></h1><p style="margin:0;color:var(--mut);max-width:520px">Atlet atletik binaan Coach Syaifudin Wahid — sprint, middle distance &amp; long distance.</p></header>
-    <div class="roster">${list.map(a => { const best = a.prestasi.find(p => p.medali) || {}; return `<a class="card ath rv" href="?a=${esc(a.id)}"><div class="im"><img src="${esc(a.foto)}" alt="${esc(a.nama)}" loading="lazy" width="480" height="960"></div><div class="bd"><b>${esc(a.nama)}</b><small>${esc(a.klub)} · ${esc(a.kategori)}</small><div class="ev">${a.nomor.map(n => `<span>${esc(n)}</span>`).join('')}${best.hasil ? `<span style="background:#fff6e6;color:#a8741d">🏅 ${esc(best.event)}</span>` : ''}</div></div></a>`; }).join('')}</div>
+  const all = list.flatMap(a => a.prestasi.map(p => ({ ...p, a })));
+  const tally = { gold: 0, silver: 0, bronze: 0 }; all.forEach(p => tally[p.medali] !== undefined && tally[p.medali]++);
+  const recent = [...all].sort((x, y) => y.tahun - x.tahun).slice(0, 6);
+  const count = k => list.filter(a => a.kategori === k).length;
+  app.innerHTML = `
+  <header class="clubbar"><div class="wrap wide" style="padding:0;display:flex;align-items:center;justify-content:space-between;gap:10px">
+    <a class="brand" href="./">${LOGO}<span><b>SuperNova</b><small>Atletik Tangerang</small></span></a>
+    <button class="iconbtn" id="share" aria-label="Bagikan halaman">↗</button></div></header>
+  <section class="club-hero"><div class="wrap wide" style="padding:0">
+    <div class="ch-in rv">
+      <span class="kicker light">Athletics Club · Kota Tangerang</span>
+      <h1>SuperNova <em>Atletik</em><br>Tangerang</h1>
+      <p>Run fast. Run far. <b>Shine like a supernova.</b> Klub atletik lari — sprint, middle distance &amp; long distance — di bawah asuhan Coach Syaifudin Wahid, M.Pd.</p>
+      <div class="ch-cta"><a class="btn-nova" href="#skuad">Lihat skuad →</a><a class="btn-ghost" href="https://syaifudinwahid.vercel.app/" target="_blank" rel="noopener">Head coach</a></div>
+    </div>
+    <div class="club-stats rv">
+      <div><b data-n="${list.length}">${list.length}</b><small>Atlet</small></div>
+      <div><b data-n="${all.length}">${all.length}</b><small>Prestasi</small></div>
+      <div><b>🥇${tally.gold} 🥈${tally.silver} 🥉${tally.bronze}</b><small>Medali</small></div>
+    </div>
+  </div></section>
+  <div class="wrap wide">
+    <div class="sec rv">Disciplines</div>
+    <div class="disc3">
+      <div class="d rv" style="--g:linear-gradient(150deg,#ff7a2f,#e53935)"><span>⚡</span><b>Sprint</b><small>100m · 200m · 400m</small><i>${count('Sprint')} atlet</i></div>
+      <div class="d rv" style="--g:linear-gradient(150deg,#ffb02e,#f46b1d)"><span>🔥</span><b>Middle Distance</b><small>800m · 1500m</small><i>${count('Middle Distance')} atlet</i></div>
+      <div class="d rv" style="--g:linear-gradient(150deg,#2b5fd9,#14275c)"><span>🏔️</span><b>Long Distance</b><small>3000m · 5K · 10K</small><i>${count('Long Distance')} atlet</i></div>
+    </div>
+
+    <div class="sec rv" id="skuad">Our squad</div>
+    <div class="roster">${list.map(a => { const best = a.prestasi.find(p => p.medali) || {}; const pb = a.pb[0]; return `<a class="card ath rv" href="?a=${esc(a.id)}"><div class="im"><img src="${esc(a.foto)}" alt="${esc(a.nama)}" loading="lazy" width="480" height="960"><span class="cat">${esc(a.kategori)}</span></div><div class="bd"><b>${esc(a.nama)}</b><small>${esc(a.gender)} · ${esc(a.sekolah)}</small><div class="ev">${a.nomor.map(n => `<span>${esc(n)}</span>`).join('')}</div>${pb ? `<div class="pbline">PB ${esc(pb.nomor)} <b>${esc(pb.tampil)}</b>${best.hasil ? ` · 🏅 ${esc(best.event)}` : ''}</div>` : ''}</div></a>`; }).join('')}</div>
+
+    <div class="sec rv">Latest achievements</div>
+    <ol class="card ach rv">${recent.map(p => `<li><span class="coin ${p.medali || 'none'}">${MED[p.medali] || '★'}</span><div><b>${esc(p.event)}</b><small>${esc(p.a.nama)} · ${esc(p.nomor)} · ${esc(p.hasil)}</small></div><span class="yr">${p.tahun}</span></li>`).join('')}</ol>
+
+    <div class="sec rv">Head coach</div>
     ${coach}
+    <footer>© ${new Date().getFullYear()} SuperNova Atletik Tangerang · Profil atlet ditampilkan dengan izin orang tua</footer>
   </div>`;
 }
 
