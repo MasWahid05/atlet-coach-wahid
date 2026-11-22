@@ -144,7 +144,9 @@ footer{text-align:center;color:var(--mut);font-size:.8rem}
 <div id="app"></div>
 <div class="toast" id="toast" role="status" aria-live="polite">Link copied ✓</div>
 <script src="data.js?v=2"></script>
+<script src="https://syaifudinwahid.vercel.app/cms/cms.js?v=1" data-site="supernova" data-globals="ATLET"></script>
 <script>
+(window.cmsReady||Promise.resolve()).then(()=>{
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const fmt = d => { const m = Math.floor(d / 60), s = d - m * 60; return m ? `${m}:${s.toFixed(s % 1 ? 2 : 0).padStart(s % 1 ? 5 : 2, '0')}` : s.toFixed(2); };
 const MED = { gold: '1', silver: '2', bronze: '3' };
@@ -243,6 +245,7 @@ document.getElementById('share').onclick = async () => {
   const data = { title: document.title, url: location.href };
   try { if (navigator.share) return await navigator.share(data); await navigator.clipboard.writeText(location.href); toast.classList.add('on'); setTimeout(() => toast.classList.remove('on'), 2000); } catch { }
 };
+});
 </script>
 </body>
 </html>
