@@ -137,5 +137,74 @@ window.ATLET = [
     idola: 'Andreas Almgren & Josh Kerr',
     instagram: 'm.idhamcahyadi',
     tiktok: 'm.idham.c_ig'
+  },
+  {
+    id: 'rakha',
+    nama: 'Rakha Fathi Ibrahim',
+    panggilan: 'Rakha',
+    gender: 'Putra',
+    lahir: 2010, bulanLahir: 10,
+    kota: 'Kota Tangerang, Banten',
+    sekolah: 'SuperNova Atletik',
+    klub: 'SuperNova Atletik',
+    sejak: 2025,
+    foto: 'foto/rakha.jpg',
+    nomor: ['100m', '200m', '400m'],
+    kategori: 'Sprint',
+    pb: [
+      { nomor: '400m', detik: 52.25, tampil: '52.25', event: 'Porprov Banten', tempat: 'Banten', tahun: 2026 },
+      { nomor: '200m', detik: 23.56, tampil: '23.56', event: 'Porprov Banten', tempat: 'Banten', tahun: 2026 },
+      { nomor: '100m', detik: 11.32, tampil: '11.32', event: 'Time Trial', tempat: 'Stadion Benteng', tahun: 2026 }
+    ],
+    prestasi: [
+      { tahun: 2026, event: 'POPDA XII Banten', nomor: 'Estafet 4×100m', hasil: 'Juara 1', medali: 'gold' },
+      { tahun: 2026, event: 'POPDA XII Banten', nomor: '400m', hasil: 'Juara 3', medali: 'bronze' },
+      { tahun: 2026, event: 'POPDA XII Banten', nomor: 'Estafet 4×400m', hasil: 'Juara 3', medali: 'bronze' }
+    ],
+    target: {
+      event: 'Benteng Spirit Run',
+      waktu: [
+        { nomor: '100m', dari: 11.32, ke: 11.2, tampil: 'sub 11.20' }
+      ]
+    },
+    motto: 'Yang sudah tertakar tidak mungkin tertukar.',
+    idola: 'Paul Pogba',
+    instagram: 'rkha.fthi',
+    tiktok: 'piso_tumpul'
+  },
+  {
+    id: 'raphael',
+    nama: 'Raphael Chenzira',
+    panggilan: 'Raphael',
+    gender: 'Putra',
+    lahir: 2010, bulanLahir: 1,
+    kota: 'Kota Tangerang, Banten',
+    sekolah: 'SMAN 6 Kota Tangerang',
+    klub: 'SuperNova Atletik',
+    sejak: 2023,
+    foto: 'foto/raphael.jpg',
+    nomor: ['100m', 'Estafet 4×100m'],
+    kategori: 'Sprint',
+    pb: [
+      { nomor: '100m', detik: 10.89, tampil: '10.89', event: 'POPDA XII Banten', tempat: 'Banten', tahun: 2026 },
+      { nomor: '80m', detik: 9.79, tampil: '9.79', event: 'SAC Junior Championship', tempat: 'Jakarta', tahun: 2025 }
+    ],
+    prestasi: [
+      { tahun: 2026, event: 'Porprov VII Banten', nomor: '100m', hasil: 'Juara 2', medali: 'silver' },
+      { tahun: 2026, event: 'Porprov VII Banten', nomor: 'Estafet 4×100m', hasil: 'Juara 1', medali: 'gold' },
+      { tahun: 2026, event: 'POPDA XII Banten', nomor: '100m', hasil: 'Juara 1', medali: 'gold' },
+      { tahun: 2026, event: 'POPDA XII Banten', nomor: 'Estafet 4×100m', hasil: 'Juara 1', medali: 'gold' },
+      { tahun: 2026, event: 'Jakarta League', nomor: '100m', hasil: 'Juara 3', medali: 'bronze' }
+    ],
+    target: {
+      event: 'POPNAS',
+      waktu: [
+        { nomor: '100m', dari: 10.89, ke: 10.70, tampil: '10.70' }
+      ]
+    },
+    motto: 'Tidak ada hasil tanpa proses, tidak ada prestasi tanpa pengorbanan.',
+    idola: 'Lalu Muhammad Zohri',
+    instagram: 'rafaelchenzira',
+    tiktok: ''
   }
 ];
