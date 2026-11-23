@@ -8,8 +8,11 @@
 <meta name="theme-color" content="#14275c">
 <meta property="og:title" content="SuperNova Atletik Tangerang">
 <meta property="og:description" content="Run fast. Run far. Shine like a supernova. Klub atletik lari Kota Tangerang.">
-<meta property="og:image" content="foto/afika.jpg">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%2314275c'/%3E%3Cpath d='M32 7l5.6 17.4L55 30l-17.4 5.6L32 53l-5.6-17.4L9 30l17.4-5.6z' fill='%23ff8a2b'/%3E%3C/svg%3E">
+<meta property="og:image" content="https://supernova-atletik-tangerang.vercel.app/assets/supernova-logo.png">
+<meta property="og:image:width" content="512">
+<meta property="og:image:height" content="512">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@600;700&display=swap" rel="stylesheet">
@@ -104,7 +107,8 @@ em{font-style:italic;color:var(--wine)}
 /* ===== KLUB (elegan & tenang) ===== */
 .clubbar{position:sticky;top:0;z-index:20;padding:10px 16px;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 .brand{display:flex;align-items:center;gap:10px;text-decoration:none}
-.logo{width:38px;height:38px;flex:none}
+.logo{width:42px;height:42px;flex:none;border-radius:50%;object-fit:contain}
+.ch-logo{width:clamp(120px,32vw,168px);height:auto;aspect-ratio:1;border-radius:50%;filter:drop-shadow(0 14px 22px rgba(28,47,99,.22))}
 .brand b{display:block;font:600 1.05rem/1.1 var(--serif);letter-spacing:.01em}
 .brand small{display:block;font-size:.64rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--mut)}
 .club-hero{padding:48px 16px 8px}
@@ -153,7 +157,7 @@ const MED = { gold: '1', silver: '2', bronze: '3' };
 const app = document.getElementById('app');
 const id = new URLSearchParams(location.search).get('a');
 const A = (window.ATLET || []).find(x => x.id === id);
-const LOGO = `<svg class="logo" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="30" fill="#1c2f63"/><path d="M32 13l4.2 13.4L50 31l-13.8 4.6L32 49l-4.2-13.4L14 31l13.8-4.6z" fill="none" stroke="#d7bf8a" stroke-width="2.2" stroke-linejoin="round"/></svg>`;
+const LOGO = `<img class="logo" src="assets/supernova-logo.webp" alt="" width="42" height="42">`;
 const coach = `<a class="card coachby rv" href="https://syaifudinwahid.vercel.app/" target="_blank" rel="noopener"><img src="assets/wahid-cutout.webp" alt=""><div><b>Coached by Coach Syaifudin Wahid, M.Pd</b><small>Swimming &amp; Athletics Coach · PASI Kota Tangerang</small></div><span aria-hidden="true">→</span></a>`;
 
 if (A) {
@@ -197,6 +201,7 @@ if (A) {
     <button class="iconbtn" id="share" aria-label="Bagikan halaman">↗</button></div></header>
   <section class="club-hero"><div class="wrap wide" style="padding:0">
     <div class="ch-in rv">
+      <img class="ch-logo" src="assets/supernova-logo.webp" alt="Logo SuperNova Atletik Tangerang" width="168" height="168" fetchpriority="high">
       <span class="kicker light">Athletics Club · Kota Tangerang</span>
       <h1>SuperNova <em>Atletik</em><br>Tangerang</h1>
       <p><b>Run fast. Run far.</b> Klub atletik lari — sprint, middle distance &amp; long distance — di bawah asuhan Coach Syaifudin Wahid, M.Pd.</p>
